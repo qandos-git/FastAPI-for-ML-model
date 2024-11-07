@@ -4,10 +4,10 @@ import pickle
 import pandas as pd
 
 
-with open('artifacts\model.pkl', 'rb') as m:
+with open('artifacts/model.pkl', 'rb') as m:
     model = pickle.load(m)
 
-with open('artifacts\preprocessor.pkl', 'rb') as p:
+with open('artifacts/preprocessor.pkl', 'rb') as p:
     processor = pickle.load(p)
     
 app = FastAPI()
