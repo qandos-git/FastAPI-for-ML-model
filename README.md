@@ -33,3 +33,15 @@ Example curl command:
     
 Note: Replace <localhost address> with http://127.0.0.1:8000 or your server's address if different.
 
+#### [Run the app with docker:](https://hub.docker.com/repository/docker/qandos/score-app/general)
+
+
+
+      run -d --name <preferd-name> -p <host-port>:8000 qandos/score-app:0.1
+
+example:
+
+
+      run -d --name score-app -p 8080:8000 qandos/score-app:0.1
+
+NOTE: Docker engine must be running
